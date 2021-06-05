@@ -15,7 +15,6 @@ const TCS = () => {
 	return (
 		<section className="container tcs-container">
 			<Link to="/">Link to home</Link>
-			{/* <Helmet title={'Terrapin Care Station'}></Helmet> */}
 			<div className="frame">
 				<h1>Terrapin Care Station</h1>
 				<img src={card} className="tcs-card" alt="tcs-card" />
