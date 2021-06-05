@@ -1,0 +1,52 @@
+.about-container
+	display: flex
+	width: 100%
+	padding: 1.5rem
+	margin: auto
+	@include media(">phone", "<=tablet")
+		padding: 1rem
+
+	.frame
+		width: 100%
+		max-width: 1400px
+		background-color: $tan
+		padding: 0
+		box-shadow: 0 10px 10px 2px #aaa
+		justify-content: center
+
+	h1
+		color: $orange
+		font-size: 5rem
+		margin-top: 3rem
+		width: 100%
+		text-align: center
+		@include media(">phone", "<=tablet")
+			font-size: 4rem
+
+	.about-content-wrap
+		display: flex
+		justify-content: center
+		flex-flow: row wrap
+
+		.copy-column
+			width: 50%
+			padding: 2rem
+			margin: 0
+			@include media(">phone", "<=tablet")
+				width: 100%
+
+		.body-copy
+			width: 100%
+			font-weight: 500
+			font-size: 1.2rem
+	  
+		.img-wrap
+			width: 50%
+			margin: 0
+			align-self: center
+			@include media(">phone", "<=tablet")
+				width: 80%
+				margin-bottom: 3rem
+
+		img
+			width: 100%
