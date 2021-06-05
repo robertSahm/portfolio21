@@ -7,6 +7,7 @@ const IndexPage = () => {
 		<div>
 			<Header />
 			<Link to="/tcs">Link to TCS Page</Link>
+			<Link to="/alpine">Link to Alpine Page</Link>
 		</div>
 	);
 };
