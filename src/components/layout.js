@@ -1,16 +1,24 @@
 import React from 'react';
 import Helmet from './helmet';
 import { makePageTitle } from './helpers';
+import { myContext } from '../context/provider';
 import '../styles/all.sass';
 import '@fontsource/eb-garamond/700.css';
 import '@fontsource/eb-garamond/400.css';
 
 const Layout = ({ children }) => {
 	return (
-		<main>
-			<Helmet title={makePageTitle(children)} />
+		<div>
+			{/* <myContext.Consumer>
+				{context => (
+					<main>
+						<Helmet title={makePageTitle(children)} />
+						<div>hiiii</div>
+					</main>
+				)}
+			</myContext.Consumer> */}
 			{children}
-		</main>
+		</div>
 	);
 };
 

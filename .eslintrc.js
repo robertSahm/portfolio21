@@ -14,12 +14,11 @@ module.exports = {
 	},
 	plugins: ['react'],
 	rules: {
-		// indent: ['error', 'tab'],
 		'linebreak-style': ['error', 'unix'],
 		quotes: ['error', 'single'],
 		semi: ['error', 'always'],
 		'react/prop-types': 0,
-		'no-unused-vars': ['warning', 'always']
+		'no-unused-vars': 0
 	},
 	settings: {
 		react: {

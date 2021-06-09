@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 
-export const ProjectContext = React.createContext({
-	project: 'none',
-	setProject: () => {}
-});
+export const myContext = React.createContext();
 
 const Provider = props => {
-	const [project, setProject] = useState('none');
-	const value = { project, setProject };
+	const [project, setProject] = useState(false);
 
-	return <ProjectContext.Provider value={value}>{props.children}</ProjectContext.Provider>;
+	return (
+		<myContext.Provider
+			value={{
+				project,
+				changeProject: () => setProject('nhhhh')
+			}}
+		>
+			{props.children}
+		</myContext.Provider>
+	);
 };
 
 // eslint-disable-next-line react/display-name
