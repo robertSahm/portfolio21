@@ -1,17 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+// import { Link } from 'gatsby';
 import SvgLines from 'react-mt-svg-lines';
-// import { useStateValue } from '../components/State';
 
 const Header = () => {
-	// const [homeLeft, setLeft] = useS/*  */tate('28.5%');
 	const [animateTrigger, setTrigger] = useState(1);
-	// const [{ homeHeight }, dispatch] = useStateValue();
-
-	// const growHome = () => {
-	// 	setHeight('100vh');
-	// 	setLeft('28.5%');
-	// 	setTrigger(animateTrigger + 1);
-	// };
 
 	const trigger = () => {
 		setTrigger(animateTrigger + 1);

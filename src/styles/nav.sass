@@ -1,130 +1,144 @@
+.header-nav 
+	float: left
+	margin: 1rem
+	@include media(">phone", "<=tablet")
+		float: right
+	
+	.nav-link
+		color: $blue
+		font-size: 1.2rem
+		line-height: 1.7rem
+		text-decoration: none
+		// font-weight: 700
+
+// old nav	
 $nav-active-color: $pink
 
 .nav-wrap
-  display: flex
-  width: auto
-  top: 0
-  right: 0
-  margin: 1rem
-  z-index: 10
-  justify-content: center
-  padding: .4rem
+	display: flex
+	width: auto
+	top: 0
+	right: 0
+	margin: 1rem
+	z-index: 10
+	justify-content: center
+	padding: .4rem
 
 .navbar-item, a.navbar-item
-  position: relative
-  text-decoration: none
-  color: $blue
-  font-size: 1.2rem
-  line-height: 1.5rem
-  padding: 0
-  margin: 0 1.3rem
-  font-weight: 700
-  z-index: 20
-  cursor: pointer
-  transition: color .4s ease-out
-  &:hover
-    color: $orange
-  &.active
-    transition: color .4s ease-out
-    color: $nav-active-color
-  @include media(">phone", "<=tablet")
-    font-size: 1.3rem
-    margin: auto
+	position: relative
+	text-decoration: none
+	color: $blue
+	font-size: 1.2rem
+	line-height: 1.5rem
+	padding: 0
+	margin: 0 1.3rem
+	font-weight: 700
+	z-index: 20
+	cursor: pointer
+	transition: color .4s ease-out
+	&:hover
+		color: $orange
+	&.active
+		transition: color .4s ease-out
+		color: $nav-active-color
+	@include media(">phone", "<=tablet")
+		font-size: 1.3rem
+		margin: auto
   
 .works-wrap
-  padding: 0 1.5rem 
-  display: flex
-  flex-flow: row wrap
-  justify-content: center
-  width: 100%
-  margin: auto
-  @include media(">phone", "<=tablet")
-    padding: 1rem
-    margin: auto
+	padding: 0 1.5rem 
+	display: flex
+	flex-flow: row wrap
+	justify-content: center
+	width: 100%
+	margin: auto
+	@include media(">phone", "<=tablet")
+		padding: 1rem
+		margin: auto
 
-  .link-box-row
-    display: flex
-    flex-flow: row wrap
-    justify-content: center
-    width: 100%
-    margin: auto
-    @include media(">phone", "<=tablet")
-      box-shadow: 0 7px 12px 0 rgba(0, 0, 0, .25)
-      margin-bottom: 2rem
+	.link-box-row
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+		width: 100%
+		margin: auto
+		@include media(">phone", "<=tablet")
+			box-shadow: 0 7px 12px 0 rgba(0, 0, 0, .25)
+			margin-bottom: 2rem
 
-  .link-box
-    position: relative
-    width: 200px
-    height: 180px
-    margin: 1rem
-    padding: .5rem
-    box-shadow: 0 7px 12px 0 rgba(0, 0, 0, .25)
-    @include media(">phone", "<=tablet")
-      margin: auto
-      width: 50%
-      box-shadow: none
+	.link-box
+		position: relative
+		width: 200px
+		height: 180px
+		margin: 1rem
+		padding: .5rem
+		box-shadow: 0 7px 12px 0 rgba(0, 0, 0, .25)
+		@include media(">phone", "<=tablet")
+			margin: auto
+			width: 50%
+			box-shadow: none
 
-    .logo-wrap
-      display: flex
-      justify-content: center
-      width: 100%
-      height: 80%
+		.logo-wrap
+			display: flex
+			justify-content: center
+			width: 100%
+			height: 80%
 
-      img
-        width: 100%
-        max-width: 140px
-        align-self: center
-        flex: 0 0 auto
+			img
+				width: 100%
+				max-width: 140px
+				align-self: center
+				flex: 0 0 auto
 
-    &.tcs-box
-      background-color: $black-text
-      color: $tan
-    
-    &.aether-box
-      background-color: $aether-orange
+		&.tcs-box
+			background-color: $black-text
+			color: $tan
+		
+		&.aether-box
+			background-color: $aether-orange
 
-    &.lucera-box
-      img
-        max-width: 80px
+		&.lucera-box
+			img
+				max-width: 80px
 
-    &.alpine-box
-      background-color: $yellow
+		&.alpine-box
+			background-color: $yellow
 
-    h3
-      font-size: 1.2rem
-      text-align: center
-      align-self: center
+		h3
+			font-size: 1.2rem
+			text-align: center
+			align-self: center
 
 a.link-wrap
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  cursor: pointer
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	cursor: pointer
 
 .content-block
-  height: 500px
+	height: 500px
 
 .spacer
-  // overflow: hidden
-  height: 1000px
-  border: 1px solid red
+	// overflow: hidden
+	height: 1000px
+	border: 1px solid red
 
 .github
-  @include media(">tablet")
-    top: -7px
+	@include media(">tablet")
+		top: -7px
 
-  svg
-    position: relative
-    top: 0
-    left: 0
-    width: 35px
-    height: 35px
-    fill: $blue
-    transition: fill .2s linear
-    &:hover
-      fill: $orange
+	svg
+		position: relative
+		top: 0
+		left: 0
+		width: 35px
+		height: 35px
+		fill: $blue
+		transition: fill .2s linear
+		&:hover
+			fill: $orange
 
 
 

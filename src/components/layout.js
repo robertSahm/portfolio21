@@ -5,11 +5,13 @@ import '../styles/all.sass';
 import '@fontsource/eb-garamond/700.css';
 import '@fontsource/eb-garamond/400.css';
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
 	return (
 		<main>
 			<Helmet title={makePageTitle(children)} />
 			{children}
 		</main>
 	);
-}
+};
+
+export default Layout;
