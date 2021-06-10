@@ -2,7 +2,7 @@ import React, { useState, createContext } from 'react';
 
 const initialState = {
 	project: 'Home',
-	hero: false
+	hero: true
 };
 
 export const TheContext = createContext(initialState);
