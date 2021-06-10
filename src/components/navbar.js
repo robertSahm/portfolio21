@@ -26,9 +26,6 @@ const Navbar = () => {
 			<a className="navbar-item" onClick={() => hero && changeHero()}>
 				Contact
 			</a>
-			<a className="navbar-item" onClick={() => hero && changeHero()}>
-				Contact 2
-			</a>
 		</nav>
 	);
 };
