@@ -1,25 +1,25 @@
-import React, { useState, createContext, useContext } from 'react';
+import React, { useState, createContext } from 'react';
 
 const initialState = {
 	project: 'Home',
-	header: false
+	hero: false
 };
 
 export const TheContext = createContext(initialState);
 
 const TheProvider = props => {
 	const [project, setProject] = useState(initialState.project);
-	const [header, setHeader] = useState(initialState.header);
+	const [hero, setHero] = useState(initialState.hero);
 
-	console.log(project, header);
+	console.log(project, hero);
 
 	return (
 		<TheContext.Provider
 			value={{
 				project,
-				header,
+				hero,
 				changeProject: e => setProject(e),
-				changeHeader: () => setHeader(!header)
+				changeHero: () => setHero(!hero)
 			}}
 		>
 			{props.children}
