@@ -1,21 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, createContext, useContext } from 'react';
 
-export const myContext = React.createContext();
+const initialState = {
+	project: 'Home',
+	header: false
+};
 
-const Provider = props => {
-	const [project, setProject] = useState(false);
+export const TheContext = createContext(initialState);
+
+const TheProvider = props => {
+	const [project, setProject] = useState(initialState.project);
+	const [header, setHeader] = useState(initialState.header);
+
+	console.log(project, header);
 
 	return (
-		<myContext.Provider
+		<TheContext.Provider
 			value={{
 				project,
-				changeProject: () => setProject('nhhhh')
+				header,
+				changeProject: e => setProject(e),
+				changeHeader: () => setHeader(!header)
 			}}
 		>
 			{props.children}
-		</myContext.Provider>
+		</TheContext.Provider>
 	);
 };
 
 // eslint-disable-next-line react/display-name
-export default ({ element }) => <Provider>{element}</Provider>;
+export default ({ element }) => <TheProvider>{element}</TheProvider>;

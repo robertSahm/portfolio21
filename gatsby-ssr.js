@@ -1,3 +1,3 @@
-import Provider from './src/context/provider';
+import TheProvider from './src/context/provider';
 
-export const wrapRootElement = Provider;
+export const wrapRootElement = TheProvider;

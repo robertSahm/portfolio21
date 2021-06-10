@@ -1,18 +1,27 @@
 import React, { useContext } from 'react';
-import { myContext } from '../context/provider';
-import Layout from './layout';
+import { Link } from 'gatsby';
+import { TheContext } from '../context/provider';
+// import Layout from './layout';
 
 const Navbar = () => {
 	return (
-		// <Layout>
-		<myContext.Consumer>
-			{context => (
+		<TheContext.Consumer>
+			{({ project, changeProject, header, changeHeader }) => (
 				<div>
-					<div onClick={() => context.changeProject()}>Project: {context.project}</div>
+					<Link
+						to="/#work-selector"
+						className="navbar-item"
+						activeClassName="active"
+						// className={ activeTab == 'work' ? 'active navbar-item' : 'navbar-item' }
+						// onClick={(e) => tabClick(e, 'work')}
+					>
+						Selected Work
+					</Link>
+					<button onClick={() => changeProject('suuuuhhhh')}>project: {project}</button>;
+					<button onClick={() => changeHeader()}>header: {`${header}`}</button>;
 				</div>
 			)}
-		</myContext.Consumer>
-		// </Layout>
+		</TheContext.Consumer>
 	);
 };
 
