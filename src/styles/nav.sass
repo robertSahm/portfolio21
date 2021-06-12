@@ -77,6 +77,12 @@ $nav-active-color: $pink
 				align-self: center
 				flex: 0 0 auto
 
+		&.yes-box
+			background-color: $yes-bg
+			color: #1abfda
+			img
+				max-width: 100px
+
 		&.tcs-box
 			background-color: $black-text
 			color: $tan
@@ -126,39 +132,3 @@ a.link-wrap
 		transition: fill .2s linear
 		&:hover
 			fill: $orange
-
-
-
-// .dropdown
-//   position: absolute
-//   top: 3.2rem 
-//   // left: 0
-//   width: auto
-//   height: auto
-//   padding: .8rem 0
-//   background-color: $yellow
-//   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .25)
-//   &:after 
-//     content: ''
-//     display: block
-//     position: absolute
-//     left: 40%
-//     bottom: 100%
-//     width: 0
-//     height: 0
-//     border-bottom: 20px solid $yellow
-//     border-top: 20px solid transparent
-//     border-left: 20px solid transparent
-//     border-right: 20px solid transparent
-
-//   .droplink
-//     position: static
-//     display: block
-//     top: 0
-//     left: 0
-//     width: 100%
-//     padding: .15rem 1rem
-//     margin: 0
-//     color: $blue
-//     &.active
-//       color: $nav-active-color
