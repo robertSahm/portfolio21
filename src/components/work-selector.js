@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import { TheContext } from '../context/provider';
+import Yes from './yes';
+import TCS from './tcs';
 import yesLogo from '../images/yes-logo.png';
 import terrapinLogo from '../images/terrapin-logo-t.png';
 import aetherDisk from '../images/aether-disk-big.png';
@@ -50,6 +52,8 @@ const WorkSelector = () => {
 					<a className="link-wrap" />
 				</div>
 			</div>
+			<Yes />
+			{/* <TCS /> */}
 		</section>
 	);
 };
