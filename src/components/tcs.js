@@ -10,6 +10,7 @@ import chart2 from '../images/tcs-chart-2.png';
 import chart3 from '../images/tcs-chart-3.png';
 import chart4 from '../images/tcs-chart-4.png';
 import tcsLogo from '../images/tcs-logo-full.png';
+import TopLink from './top-link';
 
 const TCS = () => {
 	return (
@@ -51,6 +52,7 @@ const TCS = () => {
 				</div>
 			</div>
 			<img src={tcsLogo} className="tcs-logo-full" alt="tcs-chart" />
+			<TopLink />
 		</section>
 	);
 };

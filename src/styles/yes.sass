@@ -1,0 +1,59 @@
+.yes-container
+	display: flex
+	width: 100%
+	text-align: center
+	padding: 0
+	margin: auto
+
+	.frame
+		align-self: center
+		background-color: white
+		padding: 0
+		box-shadow: 0 10px 10px 2px #aaa
+		max-width: 1400px
+		margin: auto
+
+	h1
+		color: $yes-blue
+		font-size: 6em
+		letter-spacing: -0.15rem
+		text-align: center
+		margin: 4rem auto
+		@include media(">phone", "<=tablet")
+			font-size: 4rem
+			margin-top: 2rem
+			line-height: 4rem
+
+.copy-column
+	margin-bottom: 4rem
+
+.body-copy
+	width: 50%
+	padding: .7rem 0
+	margin: 0 auto
+	text-align: left
+	@include media(">phone", "<=tablet")
+		width: 80%
+		font-size: 1.2rem
+		line-height: 1.85rem
+
+
+.yes-img-wrap
+	display: flex
+	flex-flow: row wrap
+	width: 100%
+
+	.double-row
+		display: flex
+		align-items: center
+		justify-content: space-evenly
+		// margin: 4rem auto
+
+		.image2
+			width: 25%
+
+		.image3
+			width: 65%
+
+	img
+		margin: 2rem auto
