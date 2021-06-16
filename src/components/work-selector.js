@@ -5,6 +5,8 @@ import TCS from './tcs';
 import Aether from './aether';
 import Lucera from './lucera';
 import Alpine from './alpine';
+import About from './about';
+
 import yesLogo from '../images/yes-logo.png';
 import terrapinLogo from '../images/terrapin-logo-t.png';
 import aetherDisk from '../images/aether-disk-big.png';
@@ -63,6 +65,8 @@ const WorkSelector = () => {
 					<a className="link-wrap" />
 				</div>
 			</div>
+
+			{project === 'home' && null}
 			{project === 'yes' && <Yes />}
 			{project === 'tcs' && <TCS />}
 			{project === 'aether' && <Aether />}

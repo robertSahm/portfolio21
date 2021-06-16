@@ -1,25 +1,39 @@
 import React, { useState, createContext } from 'react';
 
 const initialState = {
-	project: 'yes',
-	hero: true
+	project: 'Home',
+	hero: true,
+	selector: false,
+	about: false,
+	contact: false,
+	content: 'none'
 };
 
 export const TheContext = createContext(initialState);
 
 const TheProvider = props => {
-	const [project, setProject] = useState(initialState.project);
 	const [hero, setHero] = useState(initialState.hero);
-
-	console.log(project, hero);
+	const [selector, setSelector] = useState(initialState.selector);
+	const [project, setProject] = useState(initialState.project);
+	const [about, setAbout] = useState(initialState.about);
+	const [contact, setContact] = useState(initialState.contact);
+	const [content, setContent] = useState(initialState.content);
 
 	return (
 		<TheContext.Provider
 			value={{
-				project,
 				hero,
+				selector,
+				project,
+				about,
+				contact,
+				content,
+				changeHero: () => setHero(!hero),
+				toggleSelector: () => setSelector(!selector),
 				changeProject: e => setProject(e),
-				changeHero: () => setHero(!hero)
+				changeAbout: () => setAbout(!about),
+				changeContact: () => setContact(!contact),
+				changeContent: e => setContent(e)
 			}}
 		>
 			{props.children}

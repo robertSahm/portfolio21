@@ -24,6 +24,7 @@
     "gatsby-plugin-sass": "^3.2.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "react": "^17.0.1",
+    "react-copy-to-clipboard": "^5.0.3",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-mt-svg-lines": "^0.9.1",

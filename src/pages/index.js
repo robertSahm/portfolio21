@@ -1,16 +1,11 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
+import React from 'react';
 import Hero from '../components/hero';
 import Navbar from '../components/navbar';
-import { TheContext } from '../context/provider';
-import Layout from '../components/layout';
-import WorkSelector from '../components/work-selector';
 
 const IndexPage = () => (
 	<div>
 		<Hero />
 		<Navbar />
-		<WorkSelector />
 	</div>
 );
 
